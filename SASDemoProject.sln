@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{9726597A-1105-4EA8-BD9A-C5BCBE626F52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SASWebAPI", "SASWebAPI\SASWebAPI.csproj", "{641873B1-1BD9-4224-94EF-309376DB6D38}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{41C9496B-2A5E-459C-A517-52D747E0344D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{0568D8A2-DC23-42EB-8F22-F56281F68FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces.DataServices", "Interfaces.DataServices\Interfaces.DataServices.csproj", "{06AFADA7-9B95-4B9D-8A68-30586D7902FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces.SecurityServices", "Interfaces.SecurityServices\Interfaces.SecurityServices.csproj", "{B0CCA92F-44B0-4369-B370-5EB13C93E866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Services.Security.Implementation", "App.Services.Security.Implementation\App.Services.Security.Implementation.csproj", "{0B9A6300-7BD8-4AF6-A5D1-EB0721D1DC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.ConsoleSasApp", "Client.ConsoleSasApp\Client.ConsoleSasApp.csproj", "{F2CFCA30-6312-4FED-8D9C-77ACC571932A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Services.Data.Implementation", "App.Services.Data.Implementation\App.Services.Data.Implementation.csproj", "{4658E910-770B-4A9A-97CB-41622558448F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{641873B1-1BD9-4224-94EF-309376DB6D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641873B1-1BD9-4224-94EF-309376DB6D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641873B1-1BD9-4224-94EF-309376DB6D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641873B1-1BD9-4224-94EF-309376DB6D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AFADA7-9B95-4B9D-8A68-30586D7902FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AFADA7-9B95-4B9D-8A68-30586D7902FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AFADA7-9B95-4B9D-8A68-30586D7902FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AFADA7-9B95-4B9D-8A68-30586D7902FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0CCA92F-44B0-4369-B370-5EB13C93E866}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CCA92F-44B0-4369-B370-5EB13C93E866}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CCA92F-44B0-4369-B370-5EB13C93E866}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CCA92F-44B0-4369-B370-5EB13C93E866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B9A6300-7BD8-4AF6-A5D1-EB0721D1DC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B9A6300-7BD8-4AF6-A5D1-EB0721D1DC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B9A6300-7BD8-4AF6-A5D1-EB0721D1DC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B9A6300-7BD8-4AF6-A5D1-EB0721D1DC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CFCA30-6312-4FED-8D9C-77ACC571932A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CFCA30-6312-4FED-8D9C-77ACC571932A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CFCA30-6312-4FED-8D9C-77ACC571932A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CFCA30-6312-4FED-8D9C-77ACC571932A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4658E910-770B-4A9A-97CB-41622558448F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4658E910-770B-4A9A-97CB-41622558448F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4658E910-770B-4A9A-97CB-41622558448F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4658E910-770B-4A9A-97CB-41622558448F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{641873B1-1BD9-4224-94EF-309376DB6D38} = {9726597A-1105-4EA8-BD9A-C5BCBE626F52}
+		{06AFADA7-9B95-4B9D-8A68-30586D7902FD} = {0568D8A2-DC23-42EB-8F22-F56281F68FA9}
+		{B0CCA92F-44B0-4369-B370-5EB13C93E866} = {0568D8A2-DC23-42EB-8F22-F56281F68FA9}
+		{F2CFCA30-6312-4FED-8D9C-77ACC571932A} = {41C9496B-2A5E-459C-A517-52D747E0344D}
+	EndGlobalSection
+EndGlobal
