@@ -1,5 +1,6 @@
 ﻿using App.Services.Security.Implementation;
 using Interfaces.SecurityServices;
+using Microsoft.Azure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,13 +23,13 @@ namespace SASWebAPI.Controllers
         [Authorize]
         [HttpGet]
         [Route("~/api/sas/blobcontainer/{containerName}")]
-        public async Task<IHttpActionResult> GetSasforBlobContainer([FromUri]string containerName, string policyName = null)
+        public IHttpActionResult GetSasforBlobContainer([FromUri]string containerName, string policyName = null)
         {
             ISecurityService securityService = new SecurityService();
             string sas;
             try
             {
-                sas = await securityService.GetShareAccessSignatureForBlobContainer(containerName, policyName);
+                sas =  securityService.GetShareAccessSignatureForBlobContainer(containerName, policyName, CloudConfigurationManager.GetSetting("StorageConnectionString"));
             }
             catch (Exception ex)
             {

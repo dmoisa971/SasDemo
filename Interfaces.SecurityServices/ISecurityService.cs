@@ -9,8 +9,10 @@ namespace Interfaces.SecurityServices
 {
     public interface ISecurityService
     {
-        Task<string> GetShareAccessSignatureForBlobContainer(string containerName, string policyName);
+        //Task<string> GetShareAccessSignatureForBlobContainer(string containerName, string policyName);
+        string GetShareAccessSignatureForBlobContainer(string containerName, string policyName, string storageConnectionString);
         Task<AuthenticationResult> GetToken(string authority, string resource, string clientId, string redirectUri);
         Task<string> GetSas(string authority, string resource, string clientId, string redirectUri, string containerName, string policyName = null);
+        //string GetSas(string authority, string resource, string clientId, string redirectUri, string containerName, string policyName = null);
     }
 }

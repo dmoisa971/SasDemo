@@ -26,7 +26,7 @@ namespace App.Services.Security.Implementation
             Uri requestURI = new Uri(string.Format("https://localhost:44300/api/sas/blobcontainer/{0}", containerName));
             HttpResponseMessage httpResponse = await httpClient.GetAsync(requestURI);
 
-            throw new NotImplementedException();
+            return httpResponse.Content.ToString();
         }
 
         /// <summary>
@@ -35,10 +35,10 @@ namespace App.Services.Security.Implementation
         /// <param name="containerName">Nom du container contenant le blob</param>
         /// <param name="policyName"></param>
         /// <returns></returns>
-        public async Task<string> GetShareAccessSignatureForBlobContainer(string containerName, string policyName)
+        public string GetShareAccessSignatureForBlobContainer(string containerName, string policyName, string storageConnectionString)
         {
-            var connectionString = CloudConfigurationManager.GetSetting("StorageConnectionString");
-            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
+            
+            CloudStorageAccount storageAccount = CloudStorageAccount.Parse(storageConnectionString);
 
             CloudBlobClient client = storageAccount.CreateCloudBlobClient();
             CloudBlobContainer container = client.GetContainerReference(containerName);
